@@ -60,13 +60,17 @@ const cardList: Card[] = [
 ];
   
 // 52枚のカードリストからランダムに1枚選ぶ
-function drawCard() {
-    const random = Math.floor(Math.random() * cardList.length);
-    return cardList[random];
+function drawCard(): Card {
+    // seedを使って乱数を生成する
+    let random = Math.floor(Math.random() * 52);
+    // 乱数を使ってカードを選ぶ
+    let card = cardList[random];
+    return card;
 }
 
 
 function displayCard(card : Card) {
+    
     // card.surfaceがfrontなら表、backなら裏を表示する
     if (card.surface === 'front') {
         return (
@@ -78,31 +82,11 @@ function displayCard(card : Card) {
     } else {
         return (
             <div className="card">
-                <img src={cardPath.back} alt="back" />
+                <img src={cardPath.back} alt="back" width={cardconfig.width} height={cardconfig.height} />
             </div>
         )
     }
 }
 
 
-
-// function CardGame(surface: surface) {
-//     const card = drawCard();
-//     card.surface = surface;
-//     return (
-//         <div className="cardspace">
-//             {displayCard(card)}
-//         </div>
-//     )
-// }
-
-function CardGame() {
-    const card = drawCard();
-    return (
-        <div className="cardspace">
-            {displayCard(card)}
-        </div>
-    )
-}
-
-export default CardGame;
+export default {drawCard, displayCard};

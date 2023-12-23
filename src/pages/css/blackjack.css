@@ -1,4 +1,4 @@
-.background {
+.background2 {
     background-image: url("../../../public/assets/background/blackjack.png");
     background-repeat: no-repeat;
   /*　上下　左右　中央揃え　*/
@@ -7,4 +7,35 @@
     height: 100vh;
     width: 100%;
     position: fixed;
+}
+
+/*dealerのカードの位置は中央上部*/
+.dealer {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*playerのカードの位置は中央下部*/
+.player {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card {
+  /*card同士横並びにする　高さ幅とかは一切指定しない*/
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.player-button {
+    /*playerのボタンの位置は中央下部*/
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
 }

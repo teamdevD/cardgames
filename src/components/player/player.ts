@@ -1,7 +1,4 @@
-type Card = {
-    number: number;
-    mark: string;
-}
+import { Card } from "../card/card";
 
 export class Player{
     
@@ -11,7 +8,7 @@ export class Player{
     protected sumNumber: number = 0;
     protected sumBet: number = 0;
     protected isBust: boolean = false;
-    protected playerState: string = ""; // "wait" or "play"
+    protected playerState: string = ""; // "stand" or "hit"
 
 
     constructor(name: string){
@@ -92,7 +89,7 @@ export class Player{
     }
 
     // Player状況を取得する
-    public getPlayerStateID(): string {
+    public getPlayerState(): string {
         return this.playerState
     }
 
