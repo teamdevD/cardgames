@@ -1,5 +1,4 @@
 import './css/blackjack.css'
-import CardGame from './parts/card'
 import { Player } from '../components/player/player'
 import drawCard from './parts/card'
 import displayCard from './parts/card'

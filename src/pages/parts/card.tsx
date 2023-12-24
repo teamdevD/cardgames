@@ -1,7 +1,6 @@
 import { cardconfig } from '../../components/card/card.ts';
 import { Card } from '../../components/card/card.ts';
 import { cardPath } from '../../components/card/cardPath.ts';
-import { surface } from '../../components/card/card.ts';
 
 
 const cardList: Card[] = [

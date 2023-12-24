@@ -1,6 +1,5 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Index from './pages/index'
 import Blackjack from './pages/blackjack'
 import './pages/css/main.css'
 
