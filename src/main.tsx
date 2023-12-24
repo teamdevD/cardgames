@@ -44,7 +44,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
                     </React.StrictMode>
                   )
                 }
-                }>Start</button>
+                }>Start!</button>
               </div>
           </div>
       </div>
